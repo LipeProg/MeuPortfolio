@@ -14,8 +14,6 @@ export const experiences: Experience[] = [
       'Next.js',
       'Node.js',
       'PostgreSQL',
-      'Prisma',
-      'Python',
     ],
   },
 ];
