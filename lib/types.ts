@@ -6,8 +6,15 @@ export interface Project {
   description: string;
   technologies: string[];
   image?: string;
+  screenshots?: ProjectScreenshot[];
   github?: string;
   details?: ProjectDetails;
+}
+
+export interface ProjectScreenshot {
+  src: string;
+  alt: string;
+  caption: string;
 }
 
 export interface ProjectDetails {
@@ -41,7 +48,11 @@ export interface Experience {
   role: string;
   organization: string;
   period: string;
-  description: string;
+  description: string[];
+  responsibilities?: string[];
+  areas?: string[];
+  deliveries?: string[];
+  competencies?: string[];
   technologies: string[];
 }
 

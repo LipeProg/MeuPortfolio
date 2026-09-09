@@ -50,14 +50,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           <div className="overflow-hidden rounded-lg border border-border-soft bg-surface shadow-soft">
             {project.image && (
-              <div className="relative h-64 overflow-hidden bg-accent-soft sm:h-96">
+              <div className="relative aspect-[1920/869] overflow-hidden bg-accent-soft">
                 <Image
                   src={project.image}
                   alt={`Screenshot do projeto ${project.title}`}
                   fill
                   priority
                   sizes="(min-width: 1024px) 896px, 100vw"
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             )}
@@ -79,6 +79,39 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     <TechBadge key={technology} technology={technology} />
                   ))}
                 </div>
+              )}
+
+              {!!project.screenshots?.length && (
+                <section className="mt-10 border-t border-border-soft pt-10" aria-labelledby="project-screenshots">
+                  <h2 id="project-screenshots" className="text-2xl font-bold text-ink">Telas do projeto</h2>
+                  <p className="mt-3 text-sm text-muted">Selecione uma imagem para abrir em tamanho original.</p>
+                  <ul className="mt-6 grid gap-6 sm:grid-cols-2">
+                    {project.screenshots.map((screenshot) => (
+                      <li key={screenshot.src}>
+                        <figure className="overflow-hidden rounded-lg border border-border-soft bg-canvas">
+                          <a
+                            href={screenshot.src}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Abrir ${screenshot.caption} do ${project.title} em tamanho original (nova aba)`}
+                            className="block focus-visible:-outline-offset-4"
+                          >
+                            <div className="relative aspect-[1920/869]">
+                              <Image
+                                src={screenshot.src}
+                                alt={screenshot.alt}
+                                fill
+                                sizes="(min-width: 896px) 395px, (min-width: 640px) calc((100vw - 136px) / 2), calc(100vw - 80px)"
+                                className="object-contain"
+                              />
+                            </div>
+                          </a>
+                          <figcaption className="px-4 py-3 text-sm font-medium text-ink">{screenshot.caption}</figcaption>
+                        </figure>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               )}
 
               {project.details && (

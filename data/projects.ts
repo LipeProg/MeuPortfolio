@@ -1,10 +1,37 @@
-import { socialUrls } from '@/data/social';
 import type { Project } from '@/lib/types';
 
 export const projects: Project[] = [
   {
     slug: 'minerva-pdv',
     title: 'Minerva PDV',
+    image: '/images/projects/PVD/Captura de tela de 2026-09-09 16-02-48.png',
+    screenshots: [
+      {
+        src: '/images/projects/PVD/Captura de tela de 2026-09-09 16-02-48.png',
+        alt: 'Dashboard do Minerva PDV com indicadores de produtos, vendas e estoque.',
+        caption: 'Dashboard',
+      },
+      {
+        src: '/images/projects/PVD/Captura de tela de 2026-09-09 16-03-00.png',
+        alt: 'Tela de produtos do Minerva PDV com formulário de cadastro e busca.',
+        caption: 'Produtos',
+      },
+      {
+        src: '/images/projects/PVD/Captura de tela de 2026-09-09 16-03-05.png',
+        alt: 'Tela de vendas do Minerva PDV com seleção de produtos, desconto e total.',
+        caption: 'Vendas',
+      },
+      {
+        src: '/images/projects/PVD/Captura de tela de 2026-09-09 16-03-11.png',
+        alt: 'Tela de estoque do Minerva PDV com formulário de movimentação e histórico.',
+        caption: 'Estoque',
+      },
+      {
+        src: '/images/projects/PVD/Captura de tela de 2026-09-09 16-03-16.png',
+        alt: 'Relatórios do Minerva PDV com indicadores de vendas, faturamento e estoque.',
+        caption: 'Relatórios',
+      },
+    ],
     description:
       'MVP acadêmico full stack de um sistema web de ponto de venda para pequenos negócios, com gestão de produtos, vendas, estoque e indicadores.',
     technologies: [
@@ -69,6 +96,39 @@ export const projects: Project[] = [
   {
     slug: 'minerva-crm',
     title: 'Minerva CRM',
+    image: '/images/projects/CRM/Captura de tela de 2026-09-09 15-55-50.png',
+    screenshots: [
+      {
+        src: '/images/projects/CRM/Captura de tela de 2026-09-09 15-55-50.png',
+        alt: 'Dashboard do Minerva CRM com indicadores comerciais, etapas do funil e tarefas.',
+        caption: 'Dashboard',
+      },
+      {
+        src: '/images/projects/CRM/Captura de tela de 2026-09-09 15-56-11.png',
+        alt: 'Tela de clientes do Minerva CRM com busca, filtro de status e listagem de contatos.',
+        caption: 'Clientes',
+      },
+      {
+        src: '/images/projects/CRM/Captura de tela de 2026-09-09 15-56-25.png',
+        alt: 'Funil de vendas do Minerva CRM com leads organizados em colunas por etapa.',
+        caption: 'Funil de vendas',
+      },
+      {
+        src: '/images/projects/CRM/Captura de tela de 2026-09-09 15-56-32.png',
+        alt: 'Tela de tarefas do Minerva CRM com prioridades, status, vencimentos e responsáveis.',
+        caption: 'Tarefas',
+      },
+      {
+        src: '/images/projects/CRM/Captura de tela de 2026-09-09 15-56-39.png',
+        alt: 'Tela de interações do Minerva CRM com histórico de contatos e próximos passos.',
+        caption: 'Interações',
+      },
+      {
+        src: '/images/projects/CRM/Captura de tela de 2026-09-09 15-56-51.png',
+        alt: 'Relatórios do Minerva CRM com indicadores comerciais e distribuição de leads.',
+        caption: 'Relatórios',
+      },
+    ],
     description:
       'Projeto acadêmico frontend de CRM para pequenos negócios, com clientes, oportunidades, funil comercial, tarefas, interações e indicadores.',
     technologies: [
