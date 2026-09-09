@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { mainNavigation } from '@/data/navigation';
 import { personal } from '@/data/personal';
+import ThemeToggle from '@/components/ui/ThemeToggle/ThemeToggle';
 import { navbarStyles as styles } from './Navbar.styles';
 
 export default function Navbar() {
@@ -26,29 +27,37 @@ export default function Navbar() {
             </motion.span>
           </Link>
 
-          {/* Desktop Menu */}
-          <div className={styles.desktopMenu}>
-            {mainNavigation.map((item, index) => (
-              <motion.div
-                key={item.href}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Link href={item.href} className={styles.desktopLink}>
-                  {item.label}
-                </Link>
-              </motion.div>
-            ))}
-          </div>
+          <div className={styles.actions}>
+            {/* Desktop Menu */}
+            <div className={styles.desktopMenu}>
+              {mainNavigation.map((item, index) => (
+                <motion.div
+                  key={item.href}
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Link href={item.href} className={styles.desktopLink}>
+                    {item.label}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className={styles.mobileToggle}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            <ThemeToggle />
+
+            {/* Mobile Menu Button */}
+            <button
+              type="button"
+              className={styles.mobileToggle}
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -58,6 +67,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             className={styles.mobileMenu}
+            id="mobile-navigation"
           >
             {mainNavigation.map((item) => (
               <Link

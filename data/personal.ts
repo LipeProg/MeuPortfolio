@@ -2,31 +2,31 @@ import type { PersonalData } from '@/lib/types';
 
 export const personal: PersonalData = {
   name: 'Luis Felipe',
-  professionalTitle: 'Desenvolvedor Full-Stack',
+  professionalTitle: 'Desenvolvedor de Software',
   hero: {
     greeting: 'Olá, eu sou',
-    title: 'Full Stack Developer',
-    specialties: 'Web, Backend & Data',
+    title: 'Desenvolvedor de Software',
+    specialties: 'Full Stack, Backend & Dados',
     description:
-      'Desenvolvo aplicações web, APIs e soluções orientadas a dados, transformando ideias em produtos digitais funcionais, organizados e preparados para evoluir.',
-    technologies: ['Next.js', 'TypeScript', 'Python', 'Django', '.NET'],
+      'Desenvolvo aplicações, sistemas empresariais e soluções orientadas a dados, transformando problemas reais em produtos bem estruturados e preparados para evoluir.',
+    technologies: ['TypeScript', 'React', 'Next.js', 'Node.js', 'PostgreSQL'],
   },
   metaDescription:
-    'Portfólio profissional de Luis Felipe, desenvolvedor em formação com foco em React, C#, .NET e soluções web.',
+    'Portfólio de Luis Felipe, desenvolvedor de software com atuação em full stack, backend, dados e sistemas empresariais.',
   biography: [
-    'Olá! Meu nome é Luis Felipe, sou desenvolvedor em formação com experiência em projetos acadêmicos e práticos. Atualmente curso Ciência da Computação e já concluí um curso técnico em Análise e Desenvolvimento de Sistemas.',
-    'Tenho interesse especial em C# e .NET para backend, além de experiência em frontend com React. Estou sempre em busca de aprender novas tecnologias e expandir minhas habilidades, com foco em evoluir também na área de ciência de dados.',
-    'Gosto de resolver problemas complexos, transformar ideias em soluções funcionais e colaborar em projetos que gerem impacto real. Meu objetivo é construir soluções que unam inovação, eficiência e valor.',
+    'Sou desenvolvedor de software e estudante de Ciência da Computação, com formação técnica em Desenvolvimento de Sistemas e experiência prática na criação de aplicações web, sistemas empresariais e projetos orientados a dados.',
+    'Atuo desde a compreensão do problema até a implementação, documentação e organização técnica do projeto. Trabalho principalmente com TypeScript, React, Next.js, Node.js, Express e PostgreSQL em soluções frontend, backend e full stack.',
+    'Na InnoForge Tech, sou responsável técnico por desenvolvimento e arquitetura, contribuindo para a definição das soluções, organização dos processos, padronização técnica e evolução dos produtos. Busco evoluir em engenharia de software com uma atuação multidisciplinar entre desenvolvimento, arquitetura, dados e tecnologia aplicada a negócios.',
   ],
   educationHighlights: [
-    { value: 'ADS', label: 'Técnico concluído' },
     { value: 'CC', label: 'Graduação em andamento' },
-    { value: '.NET', label: 'Foco em backend' },
-    { value: 'React', label: 'Frontend web' },
+    { value: 'TDS', label: 'Formação técnica concluída' },
+    { value: 'Full Stack', label: 'Frontend, backend e banco' },
+    { value: 'InnoForge', label: 'Responsabilidade técnica' },
   ],
-  email: 'proglipe@outlook.com',
+  email: 'proflipe@outlook.com',
   profileImage: '/images/profile/fotoperfil.png',
   profileImageAlt: 'Foto de Luis Felipe',
   footerDescription:
-    'Desenvolvedor Full-Stack apaixonado por criar soluções inovadoras e escaláveis.',
+    'Desenvolvedor de Software com atuação em full stack, backend, dados e automação.',
 };

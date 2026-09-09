@@ -19,8 +19,7 @@ export const heroStyles = {
     'sm:text-6xl lg:text-7xl',
   ].join(' '),
   specialties: [
-    'mt-4 bg-gradient-to-r from-brand-strong via-brand-hover to-brand bg-clip-text',
-    'text-xl font-semibold text-transparent sm:text-2xl',
+    'mt-4 text-xl font-semibold text-accent-strong sm:text-2xl',
   ].join(' '),
   description: [
     'mt-6 max-w-2xl text-base leading-relaxed text-muted',
@@ -31,14 +30,14 @@ export const heroStyles = {
   actions: 'mt-8 flex flex-col gap-3 sm:flex-row sm:items-center',
   primaryAction: [
     'inline-flex items-center justify-center gap-2 rounded-lg bg-brand-action px-7 py-3',
-    'font-bold text-white shadow-soft',
-    'transition-colors hover:bg-brand-action-hover',
+    'font-bold text-brand-action-foreground shadow-soft',
+    'transition-colors hover:bg-brand-action-hover hover:text-brand-action-hover-foreground',
   ].join(' '),
   secondaryAction: [
     'inline-flex items-center justify-center gap-2 rounded-lg',
-    'border border-border-accent bg-surface px-7 py-3',
-    'font-bold text-brand-strong shadow-soft',
-    'transition-colors hover:border-brand hover:bg-surface-soft',
+    'border border-action-secondary-border bg-action-secondary px-7 py-3',
+    'font-bold text-action-secondary-foreground shadow-soft',
+    'transition-colors hover:bg-action-secondary-hover',
   ].join(' '),
 
   // Technologies
@@ -47,7 +46,7 @@ export const heroStyles = {
     'text-sm font-medium text-muted',
   ].join(' '),
   technology: 'flex items-center',
-  technologySeparator: 'mx-2 text-brand-hover',
+  technologySeparator: 'mx-2 text-secondary',
 
   // Profile image
   imageColumn: 'relative flex items-center justify-center md:justify-end',
@@ -61,7 +60,7 @@ export const heroStyles = {
   ].join(' '),
   secondaryShape: [
     'absolute -bottom-8 -right-8 -z-10 h-32 w-32 rounded-full',
-    'bg-complementary/50 blur-sm',
+    'bg-accent/25 blur-sm',
   ].join(' '),
   imageFrame: [
     'relative h-full w-full overflow-hidden rounded-[2rem]',

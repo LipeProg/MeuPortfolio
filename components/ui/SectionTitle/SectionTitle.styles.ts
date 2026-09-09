@@ -3,8 +3,7 @@ export const sectionTitleStyles = {
   container: 'mb-16 text-center',
   title: 'mb-4 text-4xl font-bold md:text-5xl',
   highlightedText: [
-    'bg-gradient-to-r from-brand-strong to-brand-hover bg-clip-text',
-    'text-transparent',
+    'text-accent-strong',
   ].join(' '),
   description: 'mx-auto max-w-2xl text-muted',
 
@@ -12,7 +11,7 @@ export const sectionTitleStyles = {
   divider: (hasDescription: boolean) =>
     [
       'mx-auto h-1 w-20 rounded-full',
-      'bg-gradient-to-r from-brand-hover to-brand',
+      'bg-secondary',
       hasDescription ? 'mt-4' : '',
     ]
       .filter(Boolean)

@@ -45,7 +45,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <MotionLink
                     href={link.href}
-                    whileHover={{ x: 5, color: 'var(--color-brand-strong)' }}
+                    whileHover={{ x: 5, color: 'var(--color-accent-strong)' }}
                     className={styles.navigationLink}
                   >
                     {link.label}

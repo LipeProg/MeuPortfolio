@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Code2 } from 'lucide-react';
 import TechBadge from '@/components/ui/TechBadge/TechBadge';
@@ -27,6 +28,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       whileHover={{ y: -10 }}
       className={styles.card}
     >
+      <Link
+        href={`/projetos/${project.slug}`}
+        className={styles.detailLink}
+        aria-label={`Ver detalhes do projeto ${project.title}`}
+      />
+
       <div className={styles.media}>
         {project.image ? (
           <Image

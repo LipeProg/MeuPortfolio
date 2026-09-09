@@ -42,7 +42,7 @@ export default function SocialLinks({ order, variant }: SocialLinksProps) {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.1, color: 'var(--color-brand-strong)' }}
+            whileHover={{ scale: 1.1, color: 'var(--color-accent-strong)' }}
             className={styles.footerLink}
             title={link.label}
           >
@@ -67,7 +67,7 @@ export default function SocialLinks({ order, variant }: SocialLinksProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
-          whileHover={{ scale: 1.1, color: 'var(--color-brand-strong)' }}
+          whileHover={{ scale: 1.1, color: 'var(--color-accent-strong)' }}
           className={styles.heroLink}
         >
           <link.icon size={28} />

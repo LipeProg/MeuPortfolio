@@ -1,11 +1,23 @@
 import type { LucideIcon } from 'lucide-react';
 
 export interface Project {
+  slug: string;
   title: string;
   description: string;
   technologies: string[];
   image?: string;
   github?: string;
+  details?: ProjectDetails;
+}
+
+export interface ProjectDetails {
+  context: string;
+  problem: string;
+  solution: string[];
+  features: string[];
+  contributions: string[];
+  competencies: string[];
+  limitations?: string[];
 }
 
 export interface SkillCategory {

@@ -2,24 +2,25 @@ import type { SkillCategory } from '@/lib/types';
 
 export const skills: SkillCategory[] = [
   {
-    category: 'Frontend',
-    items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    category: 'Linguagens e Frontend',
+    items: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'HTML e CSS'],
   },
   {
     category: 'Backend',
-    items: ['C#', '.NET', 'Node.js', 'APIs REST'],
+    items: ['Node.js', 'Express', 'APIs REST', 'Integrações full stack'],
   },
   {
-    category: 'Dados e Ferramentas',
-    items: ['SQL Server', 'Git', 'Docker', 'VS Code'],
+    category: 'Dados e Banco',
+    items: ['PostgreSQL', 'SQLite', 'SQL','ETL e visualização'],
   },
   {
-    category: 'Soft Skills',
+    category: 'Engenharia e Ferramentas',
     items: [
-      'Comunicação',
-      'Trabalho em equipe',
-      'Resolução de problemas',
-      'Aprendizado contínuo',
+      'Arquitetura e modelagem',
+      'Git e GitHub',
+      'Docker e Linux',
+      'Documentação técnica',
+      'Automação de processos',
     ],
   },
 ];

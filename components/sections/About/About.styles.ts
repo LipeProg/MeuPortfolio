@@ -8,9 +8,9 @@ export const aboutStyles = {
   biography: 'space-y-4',
   paragraph: 'leading-relaxed text-ink',
   contactLink: [
-    'mt-6 inline-block rounded-lg border-2 border-border-accent bg-surface-accent px-6 py-2',
-    'font-semibold text-brand-strong',
-    'transition-colors hover:bg-surface-soft',
+    'mt-6 inline-block rounded-lg border border-action-secondary-border',
+    'bg-action-secondary px-6 py-2 font-semibold text-action-secondary-foreground',
+    'transition-colors hover:bg-action-secondary-hover',
   ].join(' '),
 
   // Education highlights
@@ -18,9 +18,9 @@ export const aboutStyles = {
   highlightCard: [
     'rounded-lg border border-border-soft p-6',
     'bg-surface',
-    'transition-colors hover:border-brand',
+    'transition-colors hover:border-soft hover:shadow-soft',
   ].join(' '),
-  highlightValue: 'mb-2 text-3xl font-bold text-brand-strong',
+  highlightValue: 'mb-2 text-3xl font-bold text-primary',
   highlightLabel: 'text-muted',
 
   // Skills
@@ -28,11 +28,11 @@ export const aboutStyles = {
   skillsGrid: 'grid gap-6 md:grid-cols-4',
   skillCard: [
     'rounded-lg border border-border-soft p-6',
-    'bg-surface',
-    'transition-all hover:border-brand',
+    'bg-canvas',
+    'transition-all hover:border-soft hover:shadow-soft',
   ].join(' '),
-  skillCategory: 'mb-4 font-bold text-brand-strong',
+  skillCategory: 'mb-4 font-bold text-primary',
   skillList: 'space-y-2',
   skillItem: 'flex items-center text-sm text-muted',
-  skillMarker: 'mr-2 h-2 w-2 rounded-full bg-brand-hover',
+  skillMarker: 'mr-2 h-2 w-2 rounded-full bg-accent',
 } as const;
